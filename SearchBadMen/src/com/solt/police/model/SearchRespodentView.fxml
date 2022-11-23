@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="600.0" spacing="10.0" style="-fx-background-color: #757575;">
+         <children>
+            <SVGPath content="M12 2h20v4h-20v-4zM12 14h20v4h-20v-4zM12 26h20v4h-20v-4zM0 4c0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4s-4-1.791-4-4zM0 16c0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4s-4-1.791-4-4zM0 28c0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4s-4-1.791-4-4z" fill="WHITE" />
+            <Label text="Respondent Data" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="40.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="500.0" prefWidth="363.0">
+               <children>
+                  <GridPane hgap="20.0" prefHeight="411.0" prefWidth="341.0" style="-fx-background-color: #ef5350;">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="176.00003051757812" minWidth="10.0" prefWidth="136.66668701171875" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="234.66666412353516" minWidth="10.0" prefWidth="223.33331298828125" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Crime ID">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="10.0" layoutY="32.0" text="Police Name" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="32.0" text="Address" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="32.0" text="Contact" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="32.0" text="Crime" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="32.0" text="Birthday" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="32.0" text="Name" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblcrimeId" layoutX="77.0" layoutY="32.0" prefHeight="15.0" prefWidth="194.0" text="Crime ID" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblname" layoutX="89.0" layoutY="91.0" prefHeight="15.0" prefWidth="194.0" text="Name" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblbirthday" layoutX="68.0" layoutY="150.0" prefHeight="15.0" prefWidth="193.0" text="Birthday" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblcrime" layoutX="86.0" layoutY="209.0" prefHeight="15.0" prefWidth="193.0" text="Crime" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblcontact" layoutX="73.0" layoutY="268.0" prefHeight="15.0" prefWidth="193.0" text="Contact" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbladdress" layoutX="74.0" layoutY="327.0" text="Address" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblpname" layoutX="44.0" layoutY="386.0" text="Police Name" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </VBox>
+            <ImageView fx:id="imageview" fitHeight="201.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>
